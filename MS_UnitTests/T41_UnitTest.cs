@@ -6,7 +6,13 @@ namespace MS_UnitTests
     [TestClass]
     public class T41_UnitTest
     {
-        T41_DistanceConverter converter = new T41_DistanceConverter();
+        T41_DistanceConverter converter;
+
+        [TestInitialize]
+        public void Setup()
+        {
+            converter = new T41_DistanceConverter();
+        }
 
         [TestMethod]
         public void TestDistanceConverter()
