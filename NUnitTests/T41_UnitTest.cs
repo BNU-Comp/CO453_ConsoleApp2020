@@ -4,7 +4,7 @@ using CO453_ConsoleApp2020.Unit4;
 namespace NUnitTests
 {
     /// <summary>
-    /// This class tests the Distance Converter whcih can convert miles
+    /// This class tests the Distance Converter which can convert miles
     /// to feet, or feet to miles
     ///  
     /// Author:  Dr Derek Peacock
