@@ -7,7 +7,16 @@ namespace CO453_ConsoleApp2020
     {
         static void Main(string[] args)
         {
-            TestDistanceConverter();
+            //TestDistanceConverter();
+            TestBook();
+        }
+
+        private static void TestBook()
+        {
+            T42_Book book = new T42_Book();
+
+            book.WriteChapter1();
+            book.WriteChapter2();
         }
 
         /// <summary>

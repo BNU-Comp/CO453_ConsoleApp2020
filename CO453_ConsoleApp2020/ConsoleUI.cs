@@ -15,7 +15,7 @@ namespace CO453_ConsoleApp2020
         public static void WriteTitle(string title, string task)
         {
             Console.WriteLine("==========================================");
-            Console.WriteLine("  CO453 Class Exercises by" + AUTHOR);
+            Console.WriteLine("  CO453 Class Exercises by " + AUTHOR);
             Console.WriteLine("  " + task + " " + title);
             Console.WriteLine("==========================================");
             Console.WriteLine();
