@@ -49,7 +49,7 @@ namespace CO453_ConsoleApp2020.Unit4
         /// Get the details of the author, name, town, animal
         /// job and weapon used in the books stories
         /// </summary>
-        public void GetDetails() // keep using ask() to get information
+        public void GetDetails() 
         {
             author = GetString("Please type your name : ");
             name = GetString("Please type a friend's name : ");
@@ -57,6 +57,15 @@ namespace CO453_ConsoleApp2020.Unit4
             animal = GetString("Now a type of animal : ");
             job = GetString("Now a type of job : ");
             weapon = GetString("And your weapon of choice : ");
+        }
+        
+        public void SetGender(Genders newGender)
+        {
+            if (newGender == Genders.Male)
+            {
+                gender = "he";
+            }
+            else gender = "she";
         }
 
         /// <summary>
@@ -101,5 +110,13 @@ namespace CO453_ConsoleApp2020.Unit4
             Console.WriteLine(gender + "quickly got up and ran down the street in" 
                 + " to the safety of the church");
         }
+
+    }// end of class
+
+    public enum Genders
+    {
+        Male,
+        Female
     }
-}
+
+} // end of namespace

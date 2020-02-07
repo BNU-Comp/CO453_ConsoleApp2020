@@ -1,4 +1,6 @@
 ﻿using CO453_ConsoleApp2020.Unit4;
+using CO453_ConsoleApp2020.Unit5;
+
 using System;
 
 namespace CO453_ConsoleApp2020
@@ -7,10 +9,40 @@ namespace CO453_ConsoleApp2020
     {
         static void Main(string[] args)
         {
-            //TestDistanceConverter();
-            TestBook();
+            //TestDistanceConverter(); // 4.1
+            //TestBook(); // 4.2 and 4.3
+            TestTournament(); // 5.1
+
+            //TestSongs(); // 5.2
         }
 
+        /// <summary>
+        /// Task 5.2
+        /// </summary>
+        private static void TestSongs()
+        {
+            T52_MP3Chart chart = new T52_MP3Chart();
+
+            chart.ShowSongs();
+            chart.GetVotes();
+            chart.ShowVotes();
+        }
+
+        /// <summary>
+        /// Task 5.1
+        /// </summary>
+        private static void TestTournament()
+        {
+            T51_Tournament tournament = new T51_Tournament();
+
+            tournament.GetScores();
+
+            tournament.ShowScores();
+        }
+
+        /// <summary>
+        /// Task 4.2
+        /// </summary>
         private static void TestBook()
         {
             T42_Book book = new T42_Book();
@@ -26,7 +58,7 @@ namespace CO453_ConsoleApp2020
         /// </summary>
         private static void TestDistanceConverter()
         {
-            ConsoleUI.WriteTitle("Distance Converter", "Task 4.1");
+            SimpleIO.WriteTitle("Distance Converter", "Task 4.1");
 
             T41_DistanceConverter converter = new T41_DistanceConverter();
 
@@ -41,7 +73,7 @@ namespace CO453_ConsoleApp2020
 
             do
             {
-                choice = ConsoleUI.GetChoice(choices);
+                choice = SimpleIO.GetChoice(choices);
 
                 if (choice == 1)
                 {

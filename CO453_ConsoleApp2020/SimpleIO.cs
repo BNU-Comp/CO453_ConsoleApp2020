@@ -8,12 +8,13 @@ namespace CO453_ConsoleApp2020
     /// This class will provide general methods to assist user
     /// input and output using the Console
     /// </summary>
-    public static class ConsoleUI
+    public static class SimpleIO
     {
         public const string AUTHOR = "Derek Peacock";
 
         public static void WriteTitle(string title, string task)
         {
+            Console.WriteLine();
             Console.WriteLine("==========================================");
             Console.WriteLine("  CO453 Class Exercises by " + AUTHOR);
             Console.WriteLine("  " + task + " " + title);
