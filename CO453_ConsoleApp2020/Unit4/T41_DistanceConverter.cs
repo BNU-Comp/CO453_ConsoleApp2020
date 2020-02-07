@@ -20,6 +20,10 @@ namespace CO453_ConsoleApp2020.Unit4
         private double miles;
         private double feet;
 
+        /// <summary>
+        /// This method will prompt the user to enter the number of feet 
+        /// or miles that they want to convert
+        /// </summary>
         public double GetNumber(string prompt)
         {
             string value;
@@ -29,9 +33,21 @@ namespace CO453_ConsoleApp2020.Unit4
             return Convert.ToDouble(value);
         }
 
+        /// <summary>
+        /// This method will take a number of miles and convert them to feet
+        /// </summary>
+        /// <returns>No of feet in miles</returns>
         public double ToFeet(double miles)
         {
             return miles * FEET_IN_MILES;
+        }
+
+        /// <summary>
+        /// This method will take a number of feet and convert them to miles
+        /// </summary>
+        public double ToMiles(double feet)
+        {
+            return feet / FEET_IN_MILES;
         }
     }
 }

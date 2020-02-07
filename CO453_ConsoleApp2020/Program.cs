@@ -8,7 +8,6 @@ namespace CO453_ConsoleApp2020
         static void Main(string[] args)
         {
             TestDistanceConverter();
-            Console.ReadLine();
         }
 
         /// <summary>
@@ -22,10 +21,36 @@ namespace CO453_ConsoleApp2020
 
             T41_DistanceConverter converter = new T41_DistanceConverter();
 
-            double miles = converter.GetNumber("Miles");
-            double feet = converter.ToFeet(miles);
+            string[] choices = 
+            { 
+                "1. Convert Miles to Feet", 
+                "2. Convert Feet to Miles",
+                "3. Quit Program"
+            };
 
-            Console.WriteLine("No of Feet = " + feet);
+            int choice = 0;
+
+            do
+            {
+                choice = ConsoleUI.GetChoice(choices);
+
+                if (choice == 1)
+                {
+                    double miles = converter.GetNumber("Miles");
+                    double feet = converter.ToFeet(miles);
+
+                    Console.WriteLine("No of Feet = " + feet);
+                }
+                else if (choice == 2)
+                {
+                    double feet = converter.GetNumber("Feet");
+                    double miles = converter.ToMiles(feet);
+
+                    Console.WriteLine("No of Miles = " + miles);
+                }
+
+            } while (choice != 3);
+
         }
     }
 }
