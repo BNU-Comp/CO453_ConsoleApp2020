@@ -8,7 +8,7 @@ of the Module CO453
   * 4.1 Distance Converter
   * 4.2 Book
 
-![](Images/Unit-41/jpg)
+![Class Diagram](Images/Unit-41.jpg)
 
 ## Unit 5 Console Applications
   * 5.1 Tournament Scoring
