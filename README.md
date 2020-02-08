@@ -8,8 +8,7 @@ of the Module CO453
   * 4.1 Distance Converter
   * 4.2 Book
 
-![GitHub Logo](CO453_ConsoleApp2020/Images/Unit 41/jpg)
-Format: ![Alt Text](url)
+![](Images/Unit-41/jpg)
 
 ## Unit 5 Console Applications
   * 5.1 Tournament Scoring
