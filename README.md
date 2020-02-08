@@ -1,4 +1,5 @@
 # BNU CO453 Section A Console Apps 2020
+## by Dr Derek Peacock
 
 This project contains a number of simple example of C# coding as part
 of the Module CO453
