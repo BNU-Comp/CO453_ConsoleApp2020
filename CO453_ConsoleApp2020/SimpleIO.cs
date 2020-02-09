@@ -41,6 +41,29 @@ namespace CO453_ConsoleApp2020
         }
 
         /// <summary>
+        /// This method displays a prompt for the user to enter a integer 
+        /// value between and including min and max
+        /// </summary>
+        public static int GetInt(string prompt, int min, int max)
+        {
+            int mark; 
+            bool isValid = false;
+
+            do
+            {
+                mark = GetInt(prompt);
+                if (mark < min || mark > max)
+                {
+                    Console.WriteLine("Your value must be between " + min + " and " + max);
+                }
+                else isValid = true;
+
+            } while (!isValid);
+
+            return mark;
+        }
+
+        /// <summary>
         /// This method displays a prompt for the
         /// user to enter a integer value which is
         /// input as a string and converted to an int
