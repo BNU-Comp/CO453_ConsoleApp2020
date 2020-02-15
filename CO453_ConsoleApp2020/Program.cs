@@ -1,4 +1,5 @@
-﻿using CO453_ConsoleApp2020.Unit4;
+﻿using CO453_ConsoleApp2020.SPS;
+using CO453_ConsoleApp2020.Unit4;
 using CO453_ConsoleApp2020.Unit5;
 
 using System;
@@ -11,10 +12,12 @@ namespace CO453_ConsoleApp2020
         {
             //TestDistanceConverter(); // 4.1
             //TestBook(); // 4.2 and 4.3
-            
+
             //TestTournament(); // 5.1
             //TestSongs(); // 5.2
-            TestMotelBooking(); // 5.6
+            //TestMotelBooking(); // 5.6
+
+            GameController.RunGame();
         }
 
         /// <summary>
