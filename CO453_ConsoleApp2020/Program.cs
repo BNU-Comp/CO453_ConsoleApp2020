@@ -9,12 +9,17 @@ namespace CO453_ConsoleApp2020
     /// <summary>
     /// This class contains a number of methods that allow the
     /// use to test the functionality of a number of examples
-    /// classes for BNU module CO453 in 2020
+    /// classes for BNU module CO453
     /// 
     /// Version Written by: Derek Peacock
+    /// Started: February 2020
     /// </summary>
     class Program
     {
+        /// <summary>
+        /// This is the first method to be called when the
+        /// project is executed.
+        /// </summary>
         static void Main(string[] args)
         {
             //TestDistanceConverter(); // 4.1
@@ -22,15 +27,16 @@ namespace CO453_ConsoleApp2020
 
             //TestTournament(); // 5.1
             //TestSongs(); // 5.2
-            //TestMotelBooking(); // 5.6
 
             //GameController.RunGame();
         }
 
         /// <summary>
         /// Task 4.1
-        /// Test that the DistanceConverter can convert
-        /// an entered number of miles into feet and vice versa
+        /// This method repeatedly displays a small menu to the user so that they
+        /// can test that the DistanceConverter can convert
+        /// an entered number of miles into feet, or the number of feet
+        /// into miles.
         /// </summary>
         private static void TestDistanceConverter()
         {
